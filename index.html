@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organiza+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <header class="topo">
+            <div>
+                <h1>Organiza<span>+</span></h1>
+                <p>Organize suas tarefas diariamente.</p>
+            </div>
+
+            <div class="resumo">
+                <strong id="totalTarefas">0</strong>
+                <span>Tarefas cadastradas</span>
+            </div>
+        </header>
+
+        <section class="painel">
+            <h2>Adicionar tarefa</h2>
+
+            <form id="formTarefa">
+                <input
+                    type="text"
+                    id="titulo"
+                    placeholder="Digite sua tarefa..."
+                    maxlength="100"
+                    required
+                >
+
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+
+        <section class="lista-area">
+
+            <div class="lista-topo">
+                <h2>Minhas tarefas</h2>
+
+                <select id="filtro">
+                    <option value="todas">Todas</option>
+                    <option value="pendentes">Pendentes</option>
+                    <option value="concluidas">Concluídas</option>
+                </select>
+            </div>
+
+            <p id="mensagem"></p>
+
+            <ul id="listaTarefas"></ul>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
